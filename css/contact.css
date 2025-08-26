@@ -1,15 +1,20 @@
+/* =========================
+   CONTACT PAGE STYLING
+========================= */
+
 /* Container */
 .contact-tois .container {
-    max-width: 90%;
+  max-width: 90%;
   margin: 50px auto;
   padding: 30px;
-  background: #5e5a5a5d;
+  background: #5e5a5a5d; /* light transparent gray */
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.8;
-    color: #333;
+  color: #333;
 }
+
 /* Headings & Intro */
 .contact-tois h1 {
   font-size: 2.5rem;
@@ -22,7 +27,9 @@
   margin-bottom: 40px;
 }
 
-/* Layout */
+/* =========================
+   LAYOUT
+========================= */
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -35,7 +42,9 @@
   }
 }
 
-/* Form Box */
+/* =========================
+   FORM BOX
+========================= */
 .form-box {
   background: rgba(128, 128, 128, 0.452);
   padding: 30px;
@@ -68,14 +77,16 @@
   border-radius: 25px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 .form-box button:hover {
   background: #003f7f;
 }
 
-/* Info Box */
+/* =========================
+   INFO BOX
+========================= */
 .info-box {
   background: rgba(128, 128, 128, 0.507);
   padding: 30px;

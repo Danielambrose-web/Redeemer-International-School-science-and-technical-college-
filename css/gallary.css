@@ -1,10 +1,15 @@
-/* ====== Gallery Page ====== */
+/* =========================
+   GALLERY PAGE STYLING
+========================= */
+
+/* Container */
 .gallery-page {
   padding: 60px 20px;
-  background: rgba(128, 128, 128, 0.452);
+  background: rgba(128, 128, 128, 0.452); /* light transparent gray */
   text-align: center;
 }
 
+/* Headings */
 .gallery-page h1 {
   font-size: 2.5rem;
   color: #222;
@@ -23,6 +28,9 @@
   line-height: 1.6;
 }
 
+/* =========================
+   GRID LAYOUT
+========================= */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -31,7 +39,9 @@
   margin: auto;
 }
 
-/* Each card */
+/* =========================
+   GALLERY CARD
+========================= */
 .gallery-card {
   background: rgba(128, 128, 128, 0.452);
   border-radius: 12px;
@@ -48,7 +58,7 @@
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* Images */
+/* Card Images */
 .gallery-card img {
   width: 100%;
   height: 220px;
@@ -56,7 +66,7 @@
   display: block;
 }
 
-/* Card content */
+/* Card Content */
 .gallery-content {
   padding: 20px;
   text-align: left;
@@ -75,7 +85,9 @@
   line-height: 1.5;
 }
 
-/* Responsive adjustments */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
   .gallery-card img {
     height: 180px;
