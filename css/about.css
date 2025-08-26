@@ -1,0 +1,74 @@
+.about-page {
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  background: #5e5a5a5d;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-page h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #004080; /* deep blue for school/professional feel */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-page h1::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #f39c12; /* golden underline */
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+.about-page p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.about-page br {
+  margin-bottom: 10px;
+}
+
+.about-page strong {
+  color: #004080;
+}
+
+/* Highlighted section titles inside the text */
+.about-page p::first-line {
+  font-weight: bold;
+  color: #222;
+}
+
+/* Lists & streams formatting */
+.about-page p ul,
+.about-page p ol {
+  margin: 10px 0 20px 30px;
+}
+
+.about-page p li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 20px;
+  }
+  .about-page h1 {
+    font-size: 1.6rem;
+  }
+  .about-page p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,95 @@
+/* Container */
+.contact-tois .container {
+    max-width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  background: #5e5a5a5d;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+    color: #333;
+}
+/* Headings & Intro */
+.contact-tois h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-tois p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Layout */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Box */
+.form-box {
+  background: rgba(128, 128, 128, 0.452);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-box form label {
+  display: block;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.form-box button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: rgba(128, 128, 128, 0.589);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-box button:hover {
+  background: #003f7f;
+}
+
+/* Info Box */
+.info-box {
+  background: rgba(128, 128, 128, 0.507);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.info-box h2 {
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
