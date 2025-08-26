@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- External CSS File -->
     <link rel="stylesheet" href="/css/simple.css">
 </head>
 
 <body>
-    <!--header-->
+    <!-- ================= HEADER ================= -->
     <header>
+        <!-- School Logo -->
         <img src="/img/school.png" alt="">
         <span class="logo">Redeemer Intl Schools</span>
+
+        <!-- Navigation Menu -->
         <nav>
             <ul id="menu">
                 <li><a href="#">Home</a></li>
@@ -22,13 +27,17 @@
             </ul>
         </nav>
 
+        <!-- Mobile Menu Toggle Button -->
         <button class="menu-toggle">&#9776;</button>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ================= HERO SECTION ================= -->
     <div class="view">
         <div class="hero">
+            <!-- Hero Background Image -->
             <img src="./img/img1.webp">
+
+            <!-- Hero Text Content -->
             <div class="text">
                 <span class="head">Welcome To Redeemer International Schools</span>
                 <h2>science and technical college</h2>
@@ -38,32 +47,38 @@
         </div>
     </div>
 
-    <!-- mission vision and motto section-->
+    <!-- ================= MISSION, VISION & MOTTO SECTION ================= -->
     <div class="mvm">
+        <!-- Mission Card -->
         <div class="mvm-cards">
             <div><img src="/img/mission.png"></div>
             <h2>MISSION</h2>
-            <p>To provide a conducive environment for
+            <p>
+                To provide a conducive environment for
                 learning and character development,
                 nurturing students who are God-fearing,
                 innovative, and excellent future leaders.
             </p>
         </div>
 
+        <!-- Vision Card -->
         <div class="mvm-cards">
             <div><img src="/img/vission.png"></div>
             <h2>VISSION</h2>
-            <p>To empower students to explore, innovate, and aspire for
+            <p>
+                To empower students to explore, innovate, and aspire for
                 greatness in science and technical
                 fields, preparing them to be innovators
                 and leaders in society.
             </p>
         </div>
 
+        <!-- Motto Card -->
         <div class="mvm-cards">
             <div><img src="/img/motto.png"></div>
             <h2>MOTTO</h2>
-            <p>To provide a conducive environment for
+            <p>
+                To provide a conducive environment for
                 learning and character development,
                 nurturing students who are God-fearing,
                 innovative, and excellent future leaders.
@@ -71,11 +86,12 @@
         </div>
     </div>
 
-    <!-- about section-->
+    <!-- ================= ABOUT SECTION ================= -->
     <div class="about">
         <div>
             <h1>about us</h1>
-            <p>Redeemer International Schools: Science And Technical College (RISSTC) is a Government approved Christian
+            <p>
+                Redeemer International Schools: Science And Technical College (RISSTC) is a Government approved Christian
                 School founded in 2015. The school is located in a safe and serene environment at the heart of the town.
                 RISSTC is committed to catching them young to be well rooted in Christ for the marketplace especially in
                 the area of Science, Technology, Engineering and Mathematics (STEM).
@@ -95,67 +111,79 @@
         </div>
     </div>
 
-    <!--gallary setion-->
+    <!-- ================= GALLERY SECTION ================= -->
     <div class="gallary">
         <h1>OUR GALLARY</h1>
         <div class="gallary-cards">
+            
+            <!-- Gallery Card 1 -->
             <div class="gallary-card">
                 <img src="./img/img2.webp" alt="">
                 <p> Introduction to (UCMAS)</p>
                 <a href="gallary.html" class="btn about-link">Learn More</a>
             </div>
+            
+            <!-- Gallery Card 2 -->
             <div class="gallary-card">
                 <img src="./img/img3.webp" alt="">
                 <p>Robotics Exhibition at Ibom Icon.</p>
                 <a href="gallary.html" class="btn about-link">Learn More</a>
             </div>
+            
+            <!-- Gallery Card 3 -->
             <div class="gallary-card">
                 <img src="./img/img6.webp" alt="">
                 <p>Girl_child Day.</p>
                 <a href="gallary.html" class="btn about-link">Learn More</a>
             </div>
         </div>
+    </div>
 
-        <!--footer section-->
-        <footer>
+    <!-- ================= FOOTER SECTION ================= -->
+    <footer>
+        <div>
+            <!-- Contact Info -->
             <div>
-                <div>
-                    <img src="./img/school.png" alt="">
-                    <p>Call: +234 7046253879</p>
-                    <p>Email: danielessientech121@gmail.com</p>
-                </div>
-                <div>
-                    <a href="">Staf Login</a>
-                    <a href="">Student Login</a>
-                    <a href="">Appliation</a>
-                </div>
-
-                <div>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="about.html">About us</a>
-                    <a href="about.html">Gallary</a>
-                </div>
-                <div>
-                    <a href="">FAQ's</a>
-                    <a href="">BAck To Top</a>
-                </div>
+                <img src="./img/school.png" alt="">
+                <p>Call: +234 7046253879</p>
+                <p>Email: danielessientech121@gmail.com</p>
             </div>
+
+            <!-- Quick Links -->
             <div>
-                <p>2025 Redemer International Schools</p>
+                <a href="">Staf Login</a>
+                <a href="">Student Login</a>
+                <a href="">Appliation</a>
             </div>
-        </footer>
 
+            <div>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About us</a>
+                <a href="about.html">Gallary</a>
+            </div>
 
+            <div>
+                <a href="">FAQ's</a>
+                <a href="">BAck To Top</a>
+            </div>
+        </div>
 
-        <script>
-            const menuToggle = document.querySelector('.menu-toggle');
-            const menu = document.querySelector('#menu');
+        <!-- Footer Bottom -->
+        <div>
+            <p>2025 Redemer International Schools</p>
+        </div>
+    </footer>
 
-            menuToggle.addEventListener('click', () => {
-                menu.classList.toggle('show');
-            });
-        </script>
+    <!-- ================= SCRIPT ================= -->
+    <script>
+        // Toggle navigation menu on mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('#menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 
 </body>
-
 </html>

@@ -2,109 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/simple.css">
-    <link rel="stylesheet" href="./css/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Redeemer Intl Schools</title>
+  <link rel="stylesheet" href="/css/simple.css">
+  <link rel="stylesheet" href="./css/contact.css">
 </head>
 
 <body>
-<!--header-->
-    <header>
-        <img src="/img/school.png" alt="">
-        <span class="logo">Redeemer Intl Schools</span>
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#" class="btn">Student Login</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <img src="/img/school.png" alt="School Logo">
+    <span class="logo">Redeemer Intl Schools</span>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="btn">Student Login</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">&#9776;</button>
+  </header>
 
-        <button class="menu-toggle">&#9776;</button>
-    </header>
+  <!-- ================= CONTACT CONTENT ================= -->
+  <section class="contact-tois">
+    <div class="container">
+      <h1>We’re Here to Help</h1>
+      <p>Please reach out if you have questions about admissions, events, or school programs.</p>
 
+      <div class="contact-content">
+        <!-- Contact Form -->
+        <div class="form-box">
+          <form action="#" method="POST">
+            <label>
+              First Name *
+              <input type="text" name="first_name" required>
+            </label>
+            <label>
+              Email Address *
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Phone Number
+              <input type="text" name="phone">
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" maxlength="5000"></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
 
-<section class="contact-tois">
-  <div class="container">
-    <h1>We’re Here to Help</h1>
-    <p>Please reach out if you have questions about admissions, events, or school programs.</p>
-
-    <div class="contact-content">
-      <!-- Contact Form -->
-      <div class="form-box">
-        <form action="#" method="POST">
-          <label>
-            First Name *
-            <input type="text" name="first_name" required>
-          </label>
-          <label>
-            Email Address *
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            Phone Number
-            <input type="text" name="phone">
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="5" maxlength="5000"></textarea>
-          </label>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="info-box">
-        <h2>Contact Details</h2>
-        <p><strong>Email:</strong> danielessientech121@gmail.com</p>
-        <p><strong>Chat:</strong> +234 7046 253 879</p>
-        <p>Fill out the form or message us directly—either way, we’ll respond promptly!</p>
+        <!-- Contact Info -->
+        <div class="info-box">
+          <h2>Contact Details</h2>
+          <p><strong>Email:</strong> danielessientech121@gmail.com</p>
+          <p><strong>Phone/Chat:</strong> +234 7046 253 879</p>
+          <p>Fill out the form or message us directly—either way, we’ll respond promptly!</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!--footer section-->
-        <footer>
-            <div>
-                <div>
-                    <img src="./img/school.png" alt="">
-                    <p>Call: +234 7046253879</p>
-                    <p>Email: danielessientech121@gmail.com</p>
-                </div>
-                <div>
-                    <a href="">Staf Login</a>
-                    <a href="">Student Login</a>
-                    <a href="">Appliation</a>
-                </div>
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div>
+      <!-- Contact Info -->
+      <div>
+        <img src="./img/school.png" alt="School Logo">
+        <p>Call: +234 7046253879</p>
+        <p>Email: danielessientech121@gmail.com</p>
+      </div>
 
-                <div>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="about.html">About us</a>
-                    <a href="about.html">Gallary</a>
-                </div>
-                <div>
-                    <a href="">FAQ's</a>
-                    <a href="">BAck To Top</a>
-                </div>
-            </div>
-            <div>
-                <p>2025 Redemer International Schools</p>
-            </div>
-        </footer>
+      <!-- Quick Links -->
+      <div>
+        <a href="">Staff Login</a>
+        <a href="">Student Login</a>
+        <a href="">Application</a>
+      </div>
 
+      <div>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="about.html">Gallery</a>
+      </div>
 
+      <div>
+        <a href="">FAQ's</a>
+        <a href="">Back To Top</a>
+      </div>
+    </div>
 
-   <script>
-            const menuToggle = document.querySelector('.menu-toggle');
-            const menu = document.querySelector('#menu');
+    <!-- Footer Bottom -->
+    <div>
+      <p>2025 Redeemer International Schools</p>
+    </div>
+  </footer>
 
-            menuToggle.addEventListener('click', () => {
-                menu.classList.toggle('show');
-            });
-        </script>
-        </body>
-        </html>
+  <!-- ================= SCRIPT ================= -->
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('#menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
