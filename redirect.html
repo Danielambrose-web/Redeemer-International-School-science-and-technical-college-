@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/simple.css">
+</head>
+<body>
+     <!-- ================= HEADER ================= -->
+    <header>
+        <!-- School Logo -->
+        <img src="/img/school.png" alt="">
+        <span class="logo">Redeemer Intl Schools</span>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#" class="btn">Student Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle">&#9776;</button>
+    </header>
+
+<div style="margin: 40px;">
+    <p style="text-align: center; font-size:30px;">COMING SOON ...</p>
+    <p>my advice is go back to to <a href="redirect.html">Home Page</a> </p>
+</div>
+
+      <script>
+        // Toggle navigation menu on mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('#menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
