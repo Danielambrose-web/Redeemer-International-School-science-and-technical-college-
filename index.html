@@ -8,9 +8,25 @@
 
     <!-- External CSS File -->
     <link rel="stylesheet" href="/css/simple.css">
+   <script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.classList.add("hidden");
+    }, 3000); // 3 seconds delay
+  });
+</script>
+
 </head>
 
 <body>
+  <!-- Loader -->
+<div id="loader">
+  <img src="./img/school.png" alt="School Logo" class="loader-logo">
+  <p>Loading...</p>
+</div>
+
+
     <!-- ================= HEADER ================= -->
     <header>
         <!-- School Logo -->
@@ -91,7 +107,8 @@
         <div>
             <h1>about us</h1>
             <p>
-                Redeemer International Schools: Science And Technical College (RISSTC) is a Government approved Christian
+                Redeemer International Schools: Science And Technical College (RISSTC) is a Government approved
+                Christian
                 School founded in 2015. The school is located in a safe and serene environment at the heart of the town.
                 RISSTC is committed to catching them young to be well rooted in Christ for the marketplace especially in
                 the area of Science, Technology, Engineering and Mathematics (STEM).
@@ -115,21 +132,21 @@
     <div class="gallary">
         <h1>OUR GALLARY</h1>
         <div class="gallary-cards">
-            
+
             <!-- Gallery Card 1 -->
             <div class="gallary-card">
                 <img src="./img/img2.webp" alt="">
                 <p> Introduction to (UCMAS)</p>
                 <a href="gallary.html" class="btn about-link">Learn More</a>
             </div>
-            
+
             <!-- Gallery Card 2 -->
             <div class="gallary-card">
                 <img src="./img/img3.webp" alt="">
                 <p>Robotics Exhibition at Ibom Icon.</p>
                 <a href="gallary.html" class="btn about-link">Learn More</a>
             </div>
-            
+
             <!-- Gallery Card 3 -->
             <div class="gallary-card">
                 <img src="./img/img6.webp" alt="">
@@ -186,4 +203,5 @@
     </script>
 
 </body>
+
 </html>

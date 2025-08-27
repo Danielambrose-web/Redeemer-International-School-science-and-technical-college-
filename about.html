@@ -9,9 +9,24 @@
     <!-- External CSS Styles -->
     <link rel="stylesheet" href="/css/simple.css">
     <link rel="stylesheet" href="./css/about.css">
+       <script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.classList.add("hidden");
+    }, 3000); // 3 seconds delay
+  });
+</script>
+
 </head>
 
 <body>
+   <!-- Loader -->
+<div id="loader">
+  <img src="./img/school.png" alt="School Logo" class="loader-logo">
+  <p>Loading...</p>
+</div>
+
     <!-- ================= HEADER ================= -->
     <header>
         <!-- School Logo -->
@@ -23,7 +38,7 @@
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
-                <li><a href="#" class="btn">Student Login</a></li>
+                <li><a href="redirect.html" class="btn">Student Login</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -161,6 +176,10 @@
 
         menuToggle.addEventListener('click', () => {
             menu.classList.toggle('show');
+        });
+
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
         });
     </script>
 
